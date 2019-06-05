@@ -1,10 +1,10 @@
 # TD3
 
-An implementation of the TD3 algorithm in pytorch. The code here is based on the work of the original authors of the TD3 algorithm found [here](https://github.com/sfujim/TD3). 
+An implementation of the TD3 algorithm trained on the Roboschool HalfCheetah environment using pytorch. The code here is based on the work of the original authors of the TD3 algorithm found [here](https://github.com/sfujim/TD3). 
 
 ## Getting Started
 
-These instructions will demonstrate how to setup a virtual environment with all requirements for the project setup
+These instructions will demonstrate how to setup a conda environment with all requirements for the project setup.
 
 ### Installing
 
@@ -21,6 +21,11 @@ python setup.py install
 
 jupyter notebook
 ```
+
+### Results
+
+The notebook uses the same hyperparameters and architecture described in the paper. The agent is trained for 5 million timesteps. The agent converged on a successfull policy after 500k timesteps. The results below show that the agent learned rapidly and then briefly fell into a local optima. However, the agent was able to quickly recover itself. I believe with hyperparameter tuning and a proper sample of trained agents, the results could still improve. 
+
 
 ## Acknowledgments
 
